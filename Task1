@@ -1,0 +1,12 @@
+#maashin hesablanmasi
+print('Fiziki yoxsa huquqi shexs?')
+shexs=input()
+print('Maashinizi girin')
+maash=int(input())
+if shexs=='fiziki':
+  vergi=maash*5/100
+  verilecekmaash=maash-vergi
+else:
+  vergi=maash*15/100
+  verilecekmaash=maash-vergi
+print('Vergi:',vergi,'Alacaginiz maash:',verilecekmaash)
