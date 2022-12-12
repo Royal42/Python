@@ -1,0 +1,24 @@
+#quiz app
+print('1. What is a correct syntax to output "Hello World" in Python?')
+cavab=input()
+dogrucvbsayi=0
+if cavab=='print("Hello World")':
+  dogrucvbsayi+=1
+print('2. How do you insert COMMENTS in Python code?')
+cavab=input()
+if cavab=='#':
+  dogrucvbsayi+=1
+print('3. What is the correct file extension for Python files?')
+cavab=input()
+if cavab=='.py':
+  dogrucvbsayi+=1
+print('4. In Python, \'Hello\', is the same as "Hello" True or False?')
+cavab=input()
+if cavab=='True':
+  dogrucvbsayi+=1
+print('5. Which method can be used to return a string in upper case letters?')
+cavab=input()
+if cavab=='upper()':
+  dogrucvbsayi+=1
+print('-----------------')
+print(dogrucvbsayi,'dogru cavab')
