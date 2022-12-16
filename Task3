@@ -12,26 +12,31 @@ def printBoard(board):
 def check(theBoard):
   if theBoard['1']=='0' and theBoard['2']=='0' and theBoard['3']=='0' or theBoard['4']=='0' and theBoard['5']=='0' and theBoard['6']=='0' or theBoard['7']=='0' and theBoard['8']=='0' and theBoard['9']=='0' or theBoard['1']=='0' and theBoard['5']=='0' and theBoard['9']=='0' or theBoard['3']=='0' and theBoard['5']=='0' and theBoard['7']=='0' or theBoard['1']=='0' and theBoard['4']=='0' and theBoard['7']=='0' or theBoard['2']=='0' and theBoard['5']=='0' and theBoard['8']=='0' or theBoard['3']=='0' and theBoard['6']=='0' and theBoard['9']=='0':
       print("0 win")
-      raise SystemExit
+      return True
   elif theBoard['1']=='X' and theBoard['2']=='X' and theBoard['3']=='X' or theBoard['4']=='X' and theBoard['5']=='X' and theBoard['6']=='X' or theBoard['7']=='X' and theBoard['8']=='X' and theBoard['9']=='X' or theBoard['1']=='X' and theBoard['5']=='X' and theBoard['9']=='X' or theBoard['3']=='X' and theBoard['5']=='X' and theBoard['7']=='X' or theBoard['1']=='X' and theBoard['4']=='X' and theBoard['7']=='X' or theBoard['2']=='X' and theBoard['5']=='X' and theBoard['8']=='X' or theBoard['3']=='X' and theBoard['6']=='X' and theBoard['9']=='X':
       print("X win")
-      raise SystemExit
+      return True
   elif theBoard['1']!=' ' and theBoard['2']!=' ' and theBoard['3']!=' ' and theBoard['4']!=' ' and theBoard['5']!=' ' and theBoard['6']!=' ' and theBoard['7']!=' ' and theBoard['8']!=' ' and theBoard['9']!=' ':
       print("no one win")
-      raise SystemExit
+      return True
+  return False
 
-while 0<1:
+endofgame=False
+printBoard(Board)
+while endofgame==False:
+  print("Select the cell to write 0")
   user1=input()
   while Board[str(user1)]!=' ':
-    print('basqa xana secin')
+    print("You can't choose that. Select another cell")
     user1=input()
   Board[str(user1)]='0'
   printBoard(Board)
-  check(Board)
+  if check(Board)==True: break
+  print("Select the cell to write 0")
   user2=input()
   while Board[str(user2)]!=' ':
-    print('basqa xana secin')
+    print("You can't choose that. Select another cell")
     user2=input()
   Board[str(user2)]='X'
   printBoard(Board)
-  check(Board)
+  if check(Board)==True: break
