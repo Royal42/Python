@@ -32,7 +32,7 @@ while endofgame==False:
   Board[str(user1)]='0'
   printBoard(Board)
   if check(Board)==True: break
-  print("Select the cell to write 0")
+  print("Select the cell to write X")
   user2=input()
   while Board[str(user2)]!=' ':
     print("You can't choose that. Select another cell")
