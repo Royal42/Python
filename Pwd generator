@@ -1,0 +1,16 @@
+import random
+import string
+
+letters = string.ascii_letters
+digits = string.digits
+special_chars = string.punctuation
+allsymbols = letters + digits + special_chars
+
+pwd_length = int(input())
+password=''
+
+for x in range(pwd_length):
+  rand = random.randint(1,len(allsymbols)-1)
+  password+=allsymbols[rand]
+
+print(password)
