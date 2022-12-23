@@ -1,4 +1,5 @@
 def countDown (number):
    for i in reversed (range (number+1)):
       print(i)
-countDown (10)
+num=int(input())
+countDown (num)
