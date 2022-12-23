@@ -6,6 +6,7 @@ digits = string.digits
 special_chars = string.punctuation
 allsymbols = letters + digits + special_chars
 
+print("write length of password")
 pwd_length = int(input())
 password=''
 
