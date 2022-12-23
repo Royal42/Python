@@ -1,0 +1,17 @@
+print("select an operation(*;/;+;-;%):")
+emelyat = input()
+print("enter first number:")
+firstnum = float(input())
+print("enter second number:")
+secondnum = float(input())
+
+if emelyat=='*':
+  print(firstnum*secondnum)
+elif emelyat=='/':
+  print(firstnum/secondnum)
+elif emelyat=='+':
+  print(firstnum+secondnum)
+elif emelyat=='-':
+  print(firstnum-secondnum)
+elif emelyat=='%':
+  print(firstnum%secondnum)
