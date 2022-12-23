@@ -21,4 +21,4 @@ cavab=input()
 if cavab=='upper()':
   dogrucvbsayi+=1
 print('-----------------')
-print(dogrucvbsayi,'dogru cavab')
+print(dogrucvbsayi,'correct answers')
